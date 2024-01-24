@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlazeBurst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="canvas1"></canvas>
+
+    <div id="gameStart">
+        <h1 id="one"></h1>
+        <p>
+            "This is 'BlazeBurst', an immersive world, where you'll embark on a thrilling journey through animated chaos. Arm yourself, navigate challenges, and showcase your shooting skills in this heart-pounding adventure where survival is the ultimate prize."
+        </p>
+        <button id="start" >Start Journey</button>
+    </div>
+
+    <div id="gameOver">
+        <h1 id="two">Game Over</h1>
+        <p id="highScore"></p>
+        <button class="btn" id="restart" onclick="location.reload()">Restart</button>
+        <button class="btn" id="signOut">Sign Out</button>
+    </div>
+
+    <img src="worm.png" id="worm">
+    <img src="ghost.png" id="ghost">
+    <img src="spider.png" id="spider">
+
+    <img src="crosshair.png" id="crosshair">
+
+    <script src="firebase.js"></script>
+
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
